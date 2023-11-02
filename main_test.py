@@ -1,6 +1,8 @@
-import main
+from main import main
 
-def test(capsys):
-    main.calculate()
+def test_counting_for_loop(monkeypatch, capsys):
+    """Testet das Zählen mit einer Schleife durch Überprüfung des Outputs."""
+    monkeypatch.setattr('builtins.input', lambda: '4')
+    main()
     captured = capsys.readouterr()
-    assert captured.out == "Total: 78.75\n"
+    assert captured.out == '0\n1\n2\n3\n4\n'
