@@ -1,19 +1,9 @@
 {
   "tests": [
     {
-      "name": "test_counting_for_loop",
+      "name": "test_main",
       "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -v  -k \"test_counting_for_loop\"",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 1
-    },
-    {
-      "name": "test_counting_while_loop",
-      "setup": "sudo -H pip3 install -r requirements.txt",
-      "run": "pytest -v  -k \"test_counting_while_loop\"",
+      "run": "pytest -v  -k \"test_main\"",
       "input": "",
       "output": "",
       "comparison": "included",
